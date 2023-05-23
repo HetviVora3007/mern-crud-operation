@@ -1,0 +1,78 @@
+.addpage-maincontainer {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #122460;
+}
+
+.addpage-subcontainer-header {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.addpage-subcontainer-header p {
+    font-size: 22px;
+    color: #23ddec;
+}
+
+.addpage-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.addpage-formcontainer {
+    width: 90%;
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #223473;
+}
+
+.addpage-formcontainer label {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #6c8b92;
+}
+
+.addpage-formcontainer input {
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin: 5px 0;
+    background-color: #bcd2e8;
+}
+
+.create-cancel-buttons {
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+.create-button {
+    outline: none;
+    border: none;
+    margin-right: 17px;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #23ddec;
+}
+
+.cancel-button {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #7a98b5;
+}
