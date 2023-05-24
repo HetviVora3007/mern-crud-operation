@@ -1,0 +1,90 @@
+.editpage-maincontainer {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #122460;
+}
+
+.editpage-subcontainer-header {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.editpage-subcontainer-header p {
+    font-size: 22px;
+    color: #23ddec;
+}
+
+.editpage-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.editpage-formcontainer {
+    width: 90%;
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #223473;
+}
+
+.editpage-formcontainer label {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #6c8b92;
+}
+
+.editpage-formcontainer input {
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin: 5px 0;
+    background-color: #bcd2e8;
+}
+
+.edit-cancel-buttons {
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+.edit-button {
+    outline: none;
+    border: none;
+    margin-right: 17px;
+    text-decoration: none;
+    color: #122460;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 11px 30px;
+    background-color: #23ddec;
+}
+
+.edit-button button {
+    color: #122460;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width: 550px) {
+    .editpage-subcontainer-header p {
+        font-size: 20px;
+    }
+
+    .editpage-formcontainer {
+        height: 39%;
+    }
+}

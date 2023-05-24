@@ -26,8 +26,8 @@ const Add = () => {
                         <label>Email Id</label>
                         <input type='email' placeholder='Enter customer emailid' />
                         <div className='create-cancel-buttons'>
-                            <Link to='/' className='create-button'>Create</Link>
-                            <Link to='/' className='cancel-button'>Cancel</Link>
+                            <Link to='/' className='create-button'><button>Create</button></Link>
+                            <Link to='/' className='cancel-button'><button>Cancel</button></Link>
                         </div>
                     </div>
                 </div>

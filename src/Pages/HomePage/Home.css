@@ -108,8 +108,7 @@
     justify-content: space-between;
 }
 
-.edit-button {
-    color: #23ddec;
+.homepage-edit-button {
     text-decoration: none;
     padding: 10px 25px;
     border-radius: 8px;
@@ -117,18 +116,35 @@
     transition: 0.6s;
 }
 
-.edit-button:hover,
+.homepage-edit-button button {
+    color: #23ddec;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.homepage-edit-button:hover,
 .delete-button:hover {
     scale: calc(1.1);
 }
 
 .delete-button {
-    color: #bc8400;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 8px;
     border: 3px solid #bc8400;
     transition: 0.6s;
+}
+
+.delete-button button {
+    color: #bc8400;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 .footer {
@@ -144,4 +160,27 @@
     background-color: #223473;
     /* background-color: aliceblue; */
     font-size: 16px;
+}
+
+@media screen and (max-width: 550px) {
+    .header-container {
+        height: 6vh;
+    }
+
+    .header-link {
+        font-size: 20px;
+    }
+
+    .homepage-subcontainer-header p {
+        font-size: 20px;
+    }
+
+    .create-customer-link {
+        width: 44%;
+        height: 57%;
+    }
+
+    .homepage-container {
+        justify-content: center;
+    }
 }
