@@ -17,3 +17,16 @@ code {
   margin: 0;
   padding: 0;
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #122460;
+  border-radius: 20px;
+}

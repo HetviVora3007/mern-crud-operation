@@ -74,6 +74,7 @@
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
+    padding-bottom: 5%;
 }
 
 .card-container {
@@ -182,5 +183,6 @@
 
     .homepage-container {
         justify-content: center;
+        padding-bottom: 14%;
     }
 }
