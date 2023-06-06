@@ -1,11 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 import './Home.css'
-import Data from '../../Data'
 import profile from '../../Assests/profile.avif'
 
-const Home = () => {
+const Home = (props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    const deleteHandlar = (_id) => {
+        props.deleteHandlar(_id)
+    }
+
     return (
         <>
             <div className='header-container'>
@@ -21,21 +30,22 @@ const Home = () => {
                     <Link to='/add' className='create-customer-link'>Create Customer</Link>
                 </div>
                 <div className='homepage-container'>
-                    {Data.map((item) => {
-                        return (
-                            <div className='card-container'>
-                                <img src={profile} />
-                                <p>{item.name}</p>
-                                <p>{item.number}</p>
-                                <p>{item.email}</p>
-                                <div className='edit-delete-buttons'>
-                                    <Link to={`/edit/${item.id}`} className='homepage-edit-button'>
-                                        <button >Edit</button></Link>
-                                    <Link to='/' className='delete-button'><button >Delete</button></Link>
+                    {props.customerData.length == 0 ? <p className='homepage-text'>No Customer to show. Click on create customer to create one.</p> :
+                        props.customerData.map((item) => {
+                            return (
+                                <div className='card-container'>
+                                    <img src={profile} />
+                                    <p>{item.name}</p>
+                                    <p>{item.phoneNo}</p>
+                                    <p>{item.email}</p>
+                                    <div className='edit-delete-buttons'>
+                                        <Link to={`/edit/${item._id}`} className='homepage-edit-button'>
+                                            <button >Edit</button></Link>
+                                        <Link to='/' className='delete-button'><button onClick={() => deleteHandlar(item._id)}>Delete</button></Link>
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })
+                            )
+                        })
                     }
                 </div>
                 <div className='footer'>Made by Hetvi Vora</div>
