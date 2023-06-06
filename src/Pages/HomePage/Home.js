@@ -30,7 +30,7 @@ const Home = (props) => {
                     <Link to='/add' className='create-customer-link'>Create Customer</Link>
                 </div>
                 <div className='homepage-container'>
-                    {props.customerData.length == 0 ? <p className='homepage-text'>No Customer to show. Click on create customer to create one.</p> :
+                    {props.customerData.length == 0 ? <p className='homepage-text'>No Customer to show. Please create customer.</p> :
                         props.customerData.map((item) => {
                             return (
                                 <div className='card-container'>
